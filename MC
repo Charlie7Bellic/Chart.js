@@ -1,0 +1,43 @@
+{
+  "type": "bar",
+  "data": {
+    "labels": ["Masculino", "Femenino"],
+    "datasets": [{
+      "label": "Porcentaje",
+      "data": [30, 70],
+      "backgroundColor": ["#4A90E2", "#FF6F61"],
+      "borderColor": ["#2A6ABF", "#D94A3F"],
+      "borderWidth": 1
+    }]
+  },
+  "options": {
+    "scales": {
+      "y": {
+        "beginAtZero": true,
+        "max": 100,
+        "title": {
+          "display": true,
+          "text": "Porcentaje (%)"
+        },
+        "ticks": {
+          "stepSize": 10
+        }
+      },
+      "x": {
+        "title": {
+          "display": true,
+          "text": "Género"
+        }
+      }
+    },
+    "plugins": {
+      "legend": {
+        "display": false
+      },
+      "title": {
+        "display": true,
+        "text": "Género de la población"
+      }
+    }
+  }
+}
